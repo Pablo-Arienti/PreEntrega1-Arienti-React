@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ItemListContainer = ({ bienvenida }) => {
+const ItemListContainer = ({ saludo }) => {
   // Lista de componentes de PC 
   const pcComponents = [
     { id: 1, categoria: 'Procesador', precio: 200, nombre: 'Procesador Intel i7' },
@@ -20,7 +20,7 @@ const ItemListContainer = ({ bienvenida }) => {
         <div className="col-md-8">
           <div className="card">
             <div className="card-body">
-              <h3 className="card-title">{bienvenida}</h3>
+            <h3 className="card-title">{saludo}</h3>
               <ul className="list-group">
                 {pcComponents.map((componentes) => (
                   <li
